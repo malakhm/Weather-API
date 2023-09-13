@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Karim"
+      name: "Malak"
     };
   }
 
@@ -21,9 +21,25 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
+
+        <div className="header">
+          <form>
+          <input type="text" placeholder="London"></input>
+
+          <button type="submit">FIND WEATHER</button>
+          </form>
+        </div>
+
+        <div className="content">
+          <img></img>
+          <h2>Temperature</h2>
+
+          <h3>Humidity</h3>
+          <h3>Pressure</h3>
+        </div>
+
+        <div className="details">
+        </div>
       </div>
     );
   }
