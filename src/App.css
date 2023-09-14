@@ -4,7 +4,11 @@ body{
 
 }
 
+*{
+  font-family: " Raleway";
+}
 
+/* Header */
 
 .header{
 
@@ -31,4 +35,69 @@ button{
   background-color: #5879C7;
   border-style: none;
   font-size: larger;
+}
+
+input{
+  outline: none;
+  background-color: #759EDA;
+  color: white;
+  border: none;
+  font-size: larger;
+}
+
+input:focus{
+  border-bottom: solid black 1px;
+}
+
+
+
+/* targeting content */
+.content{
+  display: block;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin:50px;
+
+}
+
+
+.content img{
+  width: 120;
+  height: 120px;
+}
+
+.temperature, .generalInfo{
+  display: flex;
+  flex-direction: row;
+}
+h2, h3, p{
+  color: #122e6e;
+  padding: 5px;
+}
+.status{
+  color: white;
+  font-size:30px;
+}
+
+
+/* details */
+.details{
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container{
+
+  width: 300px;
+  text-align: center;
+  flex: 1;
+}
+
+.container img{
+  width:64px;
+  height:64px;
 }
